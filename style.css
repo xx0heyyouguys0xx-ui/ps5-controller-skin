@@ -1,239 +1,342 @@
-/*
-.controller.<identifier> {
-    background: url(your image url here);
-    height: 123px;
-    width: 123px;
-    background-repeat: no-repeat;
+/* =========================================================
+   GAMEPAD VISION — PS5 DUALSENSE EDGE
+   Stock White / Black
+   ========================================================= */
+
+/* Main controller */
+.controller.ds5,
+.ds5 {
+    filter: none !important;
+    background: transparent !important;
+    color: #111 !important;
 }
 
-.<identifier>.disconnected {
-    background: url(your image url here);
+/* ---------------------------------------------------------
+   MAIN WHITE SHELL
+   --------------------------------------------------------- */
+
+.ds5 .body,
+.ds5 .controller-body,
+.ds5 .shell,
+.ds5 .controller-shell,
+.ds5 .base {
+    background: #f4f4f4 !important;
+    border-color: #d7d7d7 !important;
+    box-shadow:
+        inset 0 1px 0 rgba(255,255,255,.9),
+        inset 0 -2px 5px rgba(0,0,0,.12),
+        0 4px 12px rgba(0,0,0,.18) !important;
 }
 
-.<identifier>.disconnected div {
-    display: none;
+/* Main shell pseudo-elements */
+.ds5 .body::before,
+.ds5 .controller-body::before,
+.ds5 .shell::before {
+    background: #f7f7f7 !important;
 }
 
-.<identifier> .triggers {
-    position: absolute;
-    background-repeat: no-repeat;
+/* ---------------------------------------------------------
+   BLACK CENTER / TOUCHPAD AREA
+   --------------------------------------------------------- */
+
+.ds5 .touchpad,
+.ds5 .touch-pad,
+.ds5 .center,
+.ds5 .middle,
+.ds5 .panel,
+.ds5 .trackpad {
+    background: #171717 !important;
+    border-color: #080808 !important;
+    box-shadow:
+        inset 0 1px 2px rgba(255,255,255,.06),
+        inset 0 -2px 4px rgba(0,0,0,.5) !important;
 }
 
-.<identifier> .trigger {
-    height: 123px;
-    width: 123px;
-    background-repeat: no-repeat;
+/* Touchpad surface */
+.ds5 .touchpad::before,
+.ds5 .touch-pad::before,
+.ds5 .trackpad::before {
+    background: #202020 !important;
+    opacity: 1 !important;
 }
 
-.<identifier> .trigger.left {
-    height: 123px;
-    width: 123px;
-    background: url(your image url here);
-    position: absolute;
-    background-repeat: no-repeat;
+/* ---------------------------------------------------------
+   D-PAD
+   --------------------------------------------------------- */
+
+.ds5 .dpad,
+.ds5 .d-pad,
+.ds5 .dpad-button {
+    background: #151515 !important;
+    border-color: #050505 !important;
+    color: #eee !important;
+    box-shadow:
+        inset 0 1px 1px rgba(255,255,255,.08),
+        0 1px 2px rgba(0,0,0,.4) !important;
 }
 
-.<identifier> .trigger.right {
-    height: 123px;
-    width: 123px;
-    background: url(your image url here);
-    position: absolute;
-    background-repeat: no-repeat;
+.ds5 .dpad button,
+.ds5 .d-pad button {
+    background: #171717 !important;
+    color: #eee !important;
 }
 
-.<identifier> .bumper {
-    opacity: 0;
+.ds5 .dpad button:active,
+.ds5 .d-pad button:active {
+    background: #303030 !important;
 }
 
-.<identifier> .bumper.pressed {
-    opacity: 1;
+/* ---------------------------------------------------------
+   FACE BUTTONS
+   --------------------------------------------------------- */
+
+.ds5 .face-buttons button,
+.ds5 .facebuttons button,
+.ds5 .abxy button,
+.ds5 .buttons button {
+    background: #f1f1f1 !important;
+    color: #202020 !important;
+    border-color: #cfcfcf !important;
+    box-shadow:
+        inset 0 1px 2px rgba(255,255,255,.9),
+        0 1px 2px rgba(0,0,0,.22) !important;
 }
 
-.<identifier> .bumper.right {
-    height: 123px;
-    width: 123px;
-    background: url(your image url here);
-    position: absolute;
-    background-repeat: no-repeat;
+/* X — blue */
+.ds5 .x,
+.ds5 .cross,
+.ds5 .button-x {
+    color: #2476c9 !important;
 }
 
-.<identifier> .bumper.left {
-    height: 123px;
-    width: 123px;
-    background: url(your image url here);
-    position: absolute;
-    background-repeat: no-repeat;
+/* Circle — red */
+.ds5 .circle,
+.ds5 .button-b,
+.ds5 .o {
+    color: #e54848 !important;
 }
 
-.<identifier> .arrows {
-    position: absolute;
-    width: 123px;
-    height: 123px;
-    top: 250px;
-    left: 291px;
-    background-repeat: no-repeat;
+/* Square — pink */
+.ds5 .square,
+.ds5 .button-xbox-y,
+.ds5 .button-square {
+    color: #d45a9b !important;
 }
 
-.<identifier> .back {
-    opacity: 0;
-    position: absolute;
+/* Triangle — green */
+.ds5 .triangle,
+.ds5 .button-y,
+.ds5 .button-triangle {
+    color: #51a85b !important;
 }
 
-.<identifier> .start {
-    opacity: 0;
-    position: absolute;
+/* Pressed face buttons */
+.ds5 .face-buttons button:active,
+.ds5 .facebuttons button:active,
+.ds5 .buttons button:active {
+    background: #dcdcdc !important;
+    transform: translateY(1px);
 }
 
-.<identifier> .back.pressed {
-    height: 123px;
-    width: 123px;
-    left: -291px;
-    top: -250px;
-    background: url(your image url here);
-    position: absolute;
-    opacity: 1;
+/* ---------------------------------------------------------
+   ANALOG STICKS
+   --------------------------------------------------------- */
+
+.ds5 .stick,
+.ds5 .analog,
+.ds5 .analog-stick,
+.ds5 .joystick {
+    background: #171717 !important;
+    border-color: #080808 !important;
+    box-shadow:
+        inset 0 2px 4px rgba(255,255,255,.05),
+        inset 0 -3px 5px rgba(0,0,0,.55),
+        0 2px 4px rgba(0,0,0,.3) !important;
 }
 
-.<identifier> .start.pressed {
-    height: 123px;
-    width: 123px;
-    left: -291px;
-    top: -250px;
-    background: url(your image url here);
-    opacity: 1;
+.ds5 .stick::before,
+.ds5 .analog::before,
+.ds5 .analog-stick::before,
+.ds5 .joystick::before {
+    background: #252525 !important;
 }
 
-.<identifier> .abxy {
-    position: absolute;
-    background-repeat: no-repeat;
+/* Stick center */
+.ds5 .stick-cap,
+.ds5 .stick .cap,
+.ds5 .analog-cap {
+    background: #1b1b1b !important;
+    border-color: #090909 !important;
 }
 
-.<identifier> .button {
-    position: absolute;
+/* ---------------------------------------------------------
+   L1 / R1
+   --------------------------------------------------------- */
+
+.ds5 .bumper,
+.ds5 .shoulder,
+.ds5 .l1,
+.ds5 .r1 {
+    background: #eeeeee !important;
+    color: #151515 !important;
+    border-color: #cfcfcf !important;
+    box-shadow:
+        inset 0 1px 2px rgba(255,255,255,.8),
+        0 1px 3px rgba(0,0,0,.2) !important;
 }
 
-.<identifier> .button.pressed {
-    background-position-y: -00px;
-    margin-top: 0px;
+/* ---------------------------------------------------------
+   L2 / R2
+   --------------------------------------------------------- */
+
+.ds5 .trigger,
+.ds5 .l2,
+.ds5 .r2 {
+    background: #e8e8e8 !important;
+    color: #111 !important;
+    border-color: #c9c9c9 !important;
+    box-shadow:
+        inset 0 1px 2px rgba(255,255,255,.8),
+        inset 0 -2px 3px rgba(0,0,0,.08) !important;
 }
 
-.<identifier> .a.pressed {
-    background: url(your image url here);
-    height: 123px;
-    width: 123px;
-    background-repeat: no-repeat;
+.ds5 .trigger:active,
+.ds5 .l2:active,
+.ds5 .r2:active {
+    background: #d5d5d5 !important;
 }
 
-.<identifier> .b.pressed {
-    background: url(your image url here);
-    height: 123px;
-    width: 123px;
-    background-repeat: no-repeat;
+/* ---------------------------------------------------------
+   CREATE / OPTIONS
+   --------------------------------------------------------- */
+
+.ds5 .start,
+.ds5 .select,
+.ds5 .options,
+.ds5 .share,
+.ds5 .menu,
+.ds5 .create {
+    background: #181818 !important;
+    color: #ddd !important;
+    border-color: #050505 !important;
+    box-shadow:
+        inset 0 1px 1px rgba(255,255,255,.08),
+        0 1px 2px rgba(0,0,0,.4) !important;
 }
 
-.<identifier> .x.pressed {
-    background: url(your image url here);
-    height: 123px;
-    width: 123px;
-    background-repeat: no-repeat;
+/* ---------------------------------------------------------
+   PS BUTTON
+   --------------------------------------------------------- */
+
+.ds5 .home,
+.ds5 .ps,
+.ds5 .guide,
+.ds5 .home-button {
+    background: #171717 !important;
+    color: #fff !important;
+    border-color: #050505 !important;
+    box-shadow:
+        inset 0 1px 2px rgba(255,255,255,.08),
+        0 1px 3px rgba(0,0,0,.4) !important;
 }
 
-.<identifier> .y.pressed {
-    background: url(your image url here);
-    height: 123px;
-    width: 123px;
-    background-repeat: no-repeat;
+/* ---------------------------------------------------------
+   LIGHT BAR
+   --------------------------------------------------------- */
+
+.ds5 .lightbar,
+.ds5 .light-bar,
+.ds5 .led,
+.ds5 .player-light {
+    background: #2b8cff !important;
+    box-shadow:
+        0 0 5px rgba(43,140,255,.75),
+        0 0 12px rgba(43,140,255,.35) !important;
 }
 
-.<identifier> .meta.pressed {
-    background: url(your image url here);
-    height: 123px;
-    width: 123px;
-    background-repeat: no-repeat;
+/* ---------------------------------------------------------
+   MUTE BUTTON
+   --------------------------------------------------------- */
+
+.ds5 .mute,
+.ds5 .mute-button {
+    background: #181818 !important;
+    color: #ccc !important;
+    border-color: #050505 !important;
 }
 
-.<identifier> .sticks {
-    left: 122px;
-    top: 256px;
-    position: absolute;
-    background-repeat: no-repeat;
+.ds5 .mute.active,
+.ds5 .mute-button.active {
+    background: #ff5722 !important;
+    color: white !important;
 }
 
-.<identifier> .stick. {
-    position: absolute;
+/* ---------------------------------------------------------
+   EDGE DETAILING
+   --------------------------------------------------------- */
+
+/* Dark lower grip areas */
+.ds5 .grip,
+.ds5 .handle,
+.ds5 .handles {
+    background: #ededed !important;
 }
 
-.<identifier> .stick.pressed.left {
-    position: absolute;
-    background: url(your image url here);
-    height: 123px;
-    width: 123px;
-    background-repeat: no-repeat;
+/* Black underside accents */
+.ds5 .lower,
+.ds5 .bottom,
+.ds5 .underside {
+    background: #dedede !important;
 }
 
-.<identifier> .stick.pressed.right {
-    position: absolute;
-    background: url(your image url here);
-    height: 123px;
-    width: 123px;
-    background-repeat: no-repeat;
+/* ---------------------------------------------------------
+   PRESSED-INPUT EFFECT
+   --------------------------------------------------------- */
+
+.ds5 button.pressed,
+.ds5 .pressed,
+.ds5 .active,
+.ds5 .button-pressed {
+    filter: brightness(.82) !important;
 }
 
-.<identifier> .stick.left {
-    position: absolute;
-    background: url(your image url here);
-    height: 123px;
-    width: 123px;
-    background-repeat: no-repeat;
+/* ---------------------------------------------------------
+   REMOVE DEFAULT COLOR FILTERS / RGB EFFECTS
+   --------------------------------------------------------- */
+
+.ds5,
+.ds5 * {
+    --primary: #f4f4f4 !important;
+    --secondary: #171717 !important;
+    --accent: #2b8cff !important;
+    --button: #eeeeee !important;
+    --button-text: #181818 !important;
+    --glow: #2b8cff !important;
 }
 
-.<identifier> .stick.right {
-    position: absolute;
-    background: url(your image url here);
-        left: 382px;
-        top: 152px;
-    height: 123px;
-    width: 123px;
-    background-repeat: no-repeat;
+/* Keep controller clean — no rainbow/RGB */
+.ds5 .rgb,
+.ds5 .rainbow,
+.ds5 .neon {
+    animation: none !important;
+    filter: none !important;
 }
 
-.<identifier> .dpad {
-    height: 123px;
-    width: 123px;
-    background-repeat: no-repeat;
+/* ---------------------------------------------------------
+   STOCK DUALSENSE EDGE FINISH
+   --------------------------------------------------------- */
+
+.ds5 {
+    text-shadow: none !important;
 }
 
-.<identifier> .face {
-    background: url(your image url here);
-    position: absolute;
+.ds5 svg {
+    filter: none !important;
 }
 
-.<identifier> .face.right.pressed {
-    background: url(your image url here);
-    height: 123px;
-    width: 123px;
-    background-repeat: no-repeat;
+.ds5 button {
+    transition:
+        background-color .08s ease,
+        box-shadow .08s ease,
+        transform .05s ease !important;
 }
-
-.<identifier> .face.left.pressed {
-    background: url(your image url here);
-    height: 123px;
-    width: 123px;
-    background-repeat: no-repeat;
-}
-
-.<identifier> .face.up.pressed {
-    background: url(your image url here);
-    height: 123px;
-    width: 123px;
-    background-repeat: no-repeat;
-}
-
-.<identifier> .face.down.pressed {
-    background: url(your image url here);
-    height: 123px;
-    width: 123px;
-    background-repeat: no-repeat;
-}
-
-*/
