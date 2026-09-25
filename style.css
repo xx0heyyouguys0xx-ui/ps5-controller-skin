@@ -1,342 +1,333 @@
-/* =========================================================
-   GAMEPAD VISION — PS5 DUALSENSE EDGE
-   Stock White / Black
-   ========================================================= */
+ /* =========================================================
+    GAMEPAD VIEWER — PS4 → PS5 DUALSENSE EDGE
+    Stock White / Black DualSense Edge
+    ========================================================= */
 
-/* Main controller */
-.controller.ds5,
-.ds5 {
+/* ---------- GLOBAL ---------- */
+
+.controller {
+    --ps5-white: #f2f2f2;
+    --ps5-white-hi: #ffffff;
+    --ps5-gray: #d8d8d8;
+    --ps5-dark: #171717;
+    --ps5-black: #090909;
+    --ps5-blue: #2589e8;
+    --ps5-red: #e84b55;
+    --ps5-green: #54a866;
+    --ps5-pink: #d866a0;
+
     filter: none !important;
-    background: transparent !important;
-    color: #111 !important;
-}
-
-/* ---------------------------------------------------------
-   MAIN WHITE SHELL
-   --------------------------------------------------------- */
-
-.ds5 .body,
-.ds5 .controller-body,
-.ds5 .shell,
-.ds5 .controller-shell,
-.ds5 .base {
-    background: #f4f4f4 !important;
-    border-color: #d7d7d7 !important;
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.9),
-        inset 0 -2px 5px rgba(0,0,0,.12),
-        0 4px 12px rgba(0,0,0,.18) !important;
-}
-
-/* Main shell pseudo-elements */
-.ds5 .body::before,
-.ds5 .controller-body::before,
-.ds5 .shell::before {
-    background: #f7f7f7 !important;
-}
-
-/* ---------------------------------------------------------
-   BLACK CENTER / TOUCHPAD AREA
-   --------------------------------------------------------- */
-
-.ds5 .touchpad,
-.ds5 .touch-pad,
-.ds5 .center,
-.ds5 .middle,
-.ds5 .panel,
-.ds5 .trackpad {
-    background: #171717 !important;
-    border-color: #080808 !important;
-    box-shadow:
-        inset 0 1px 2px rgba(255,255,255,.06),
-        inset 0 -2px 4px rgba(0,0,0,.5) !important;
-}
-
-/* Touchpad surface */
-.ds5 .touchpad::before,
-.ds5 .touch-pad::before,
-.ds5 .trackpad::before {
-    background: #202020 !important;
-    opacity: 1 !important;
-}
-
-/* ---------------------------------------------------------
-   D-PAD
-   --------------------------------------------------------- */
-
-.ds5 .dpad,
-.ds5 .d-pad,
-.ds5 .dpad-button {
-    background: #151515 !important;
-    border-color: #050505 !important;
-    color: #eee !important;
-    box-shadow:
-        inset 0 1px 1px rgba(255,255,255,.08),
-        0 1px 2px rgba(0,0,0,.4) !important;
-}
-
-.ds5 .dpad button,
-.ds5 .d-pad button {
-    background: #171717 !important;
-    color: #eee !important;
-}
-
-.ds5 .dpad button:active,
-.ds5 .d-pad button:active {
-    background: #303030 !important;
-}
-
-/* ---------------------------------------------------------
-   FACE BUTTONS
-   --------------------------------------------------------- */
-
-.ds5 .face-buttons button,
-.ds5 .facebuttons button,
-.ds5 .abxy button,
-.ds5 .buttons button {
-    background: #f1f1f1 !important;
-    color: #202020 !important;
-    border-color: #cfcfcf !important;
-    box-shadow:
-        inset 0 1px 2px rgba(255,255,255,.9),
-        0 1px 2px rgba(0,0,0,.22) !important;
-}
-
-/* X — blue */
-.ds5 .x,
-.ds5 .cross,
-.ds5 .button-x {
-    color: #2476c9 !important;
-}
-
-/* Circle — red */
-.ds5 .circle,
-.ds5 .button-b,
-.ds5 .o {
-    color: #e54848 !important;
-}
-
-/* Square — pink */
-.ds5 .square,
-.ds5 .button-xbox-y,
-.ds5 .button-square {
-    color: #d45a9b !important;
-}
-
-/* Triangle — green */
-.ds5 .triangle,
-.ds5 .button-y,
-.ds5 .button-triangle {
-    color: #51a85b !important;
-}
-
-/* Pressed face buttons */
-.ds5 .face-buttons button:active,
-.ds5 .facebuttons button:active,
-.ds5 .buttons button:active {
-    background: #dcdcdc !important;
-    transform: translateY(1px);
-}
-
-/* ---------------------------------------------------------
-   ANALOG STICKS
-   --------------------------------------------------------- */
-
-.ds5 .stick,
-.ds5 .analog,
-.ds5 .analog-stick,
-.ds5 .joystick {
-    background: #171717 !important;
-    border-color: #080808 !important;
-    box-shadow:
-        inset 0 2px 4px rgba(255,255,255,.05),
-        inset 0 -3px 5px rgba(0,0,0,.55),
-        0 2px 4px rgba(0,0,0,.3) !important;
-}
-
-.ds5 .stick::before,
-.ds5 .analog::before,
-.ds5 .analog-stick::before,
-.ds5 .joystick::before {
-    background: #252525 !important;
-}
-
-/* Stick center */
-.ds5 .stick-cap,
-.ds5 .stick .cap,
-.ds5 .analog-cap {
-    background: #1b1b1b !important;
-    border-color: #090909 !important;
-}
-
-/* ---------------------------------------------------------
-   L1 / R1
-   --------------------------------------------------------- */
-
-.ds5 .bumper,
-.ds5 .shoulder,
-.ds5 .l1,
-.ds5 .r1 {
-    background: #eeeeee !important;
-    color: #151515 !important;
-    border-color: #cfcfcf !important;
-    box-shadow:
-        inset 0 1px 2px rgba(255,255,255,.8),
-        0 1px 3px rgba(0,0,0,.2) !important;
-}
-
-/* ---------------------------------------------------------
-   L2 / R2
-   --------------------------------------------------------- */
-
-.ds5 .trigger,
-.ds5 .l2,
-.ds5 .r2 {
-    background: #e8e8e8 !important;
-    color: #111 !important;
-    border-color: #c9c9c9 !important;
-    box-shadow:
-        inset 0 1px 2px rgba(255,255,255,.8),
-        inset 0 -2px 3px rgba(0,0,0,.08) !important;
-}
-
-.ds5 .trigger:active,
-.ds5 .l2:active,
-.ds5 .r2:active {
-    background: #d5d5d5 !important;
-}
-
-/* ---------------------------------------------------------
-   CREATE / OPTIONS
-   --------------------------------------------------------- */
-
-.ds5 .start,
-.ds5 .select,
-.ds5 .options,
-.ds5 .share,
-.ds5 .menu,
-.ds5 .create {
-    background: #181818 !important;
-    color: #ddd !important;
-    border-color: #050505 !important;
-    box-shadow:
-        inset 0 1px 1px rgba(255,255,255,.08),
-        0 1px 2px rgba(0,0,0,.4) !important;
-}
-
-/* ---------------------------------------------------------
-   PS BUTTON
-   --------------------------------------------------------- */
-
-.ds5 .home,
-.ds5 .ps,
-.ds5 .guide,
-.ds5 .home-button {
-    background: #171717 !important;
-    color: #fff !important;
-    border-color: #050505 !important;
-    box-shadow:
-        inset 0 1px 2px rgba(255,255,255,.08),
-        0 1px 3px rgba(0,0,0,.4) !important;
-}
-
-/* ---------------------------------------------------------
-   LIGHT BAR
-   --------------------------------------------------------- */
-
-.ds5 .lightbar,
-.ds5 .light-bar,
-.ds5 .led,
-.ds5 .player-light {
-    background: #2b8cff !important;
-    box-shadow:
-        0 0 5px rgba(43,140,255,.75),
-        0 0 12px rgba(43,140,255,.35) !important;
-}
-
-/* ---------------------------------------------------------
-   MUTE BUTTON
-   --------------------------------------------------------- */
-
-.ds5 .mute,
-.ds5 .mute-button {
-    background: #181818 !important;
-    color: #ccc !important;
-    border-color: #050505 !important;
-}
-
-.ds5 .mute.active,
-.ds5 .mute-button.active {
-    background: #ff5722 !important;
-    color: white !important;
-}
-
-/* ---------------------------------------------------------
-   EDGE DETAILING
-   --------------------------------------------------------- */
-
-/* Dark lower grip areas */
-.ds5 .grip,
-.ds5 .handle,
-.ds5 .handles {
-    background: #ededed !important;
-}
-
-/* Black underside accents */
-.ds5 .lower,
-.ds5 .bottom,
-.ds5 .underside {
-    background: #dedede !important;
-}
-
-/* ---------------------------------------------------------
-   PRESSED-INPUT EFFECT
-   --------------------------------------------------------- */
-
-.ds5 button.pressed,
-.ds5 .pressed,
-.ds5 .active,
-.ds5 .button-pressed {
-    filter: brightness(.82) !important;
-}
-
-/* ---------------------------------------------------------
-   REMOVE DEFAULT COLOR FILTERS / RGB EFFECTS
-   --------------------------------------------------------- */
-
-.ds5,
-.ds5 * {
-    --primary: #f4f4f4 !important;
-    --secondary: #171717 !important;
-    --accent: #2b8cff !important;
-    --button: #eeeeee !important;
-    --button-text: #181818 !important;
-    --glow: #2b8cff !important;
-}
-
-/* Keep controller clean — no rainbow/RGB */
-.ds5 .rgb,
-.ds5 .rainbow,
-.ds5 .neon {
-    animation: none !important;
-    filter: none !important;
-}
-
-/* ---------------------------------------------------------
-   STOCK DUALSENSE EDGE FINISH
-   --------------------------------------------------------- */
-
-.ds5 {
     text-shadow: none !important;
 }
 
-.ds5 svg {
-    filter: none !important;
+/* ---------- MAIN DUALSENSE SHELL ---------- */
+
+.controller.ps4 .body,
+.controller.ps4 .controller,
+.controller.ps4 .base,
+.controller.ps4 .shell {
+    background: var(--ps5-white) !important;
+    border-color: var(--ps5-gray) !important;
+
+    box-shadow:
+        inset 0 2px 3px rgba(255,255,255,.95),
+        inset 0 -5px 10px rgba(0,0,0,.08),
+        0 5px 14px rgba(0,0,0,.20) !important;
 }
 
-.ds5 button {
+/* White plastic highlights */
+
+.controller.ps4 .body::before,
+.controller.ps4 .shell::before {
+    background: var(--ps5-white-hi) !important;
+    opacity: .45 !important;
+}
+
+/* ---------- PS5 BLACK CENTER ---------- */
+
+.controller.ps4 .touchpad,
+.controller.ps4 .touch-pad,
+.controller.ps4 .trackpad {
+
+    background:
+        linear-gradient(
+            180deg,
+            #222 0%,
+            #151515 100%
+        ) !important;
+
+    border-color: #050505 !important;
+
+    box-shadow:
+        inset 0 2px 3px rgba(255,255,255,.07),
+        inset 0 -3px 6px rgba(0,0,0,.65),
+        0 2px 4px rgba(0,0,0,.25) !important;
+}
+
+/* Touchpad highlight */
+
+.controller.ps4 .touchpad::before,
+.controller.ps4 .trackpad::before {
+    background: rgba(255,255,255,.035) !important;
+}
+
+/* ---------- D-PAD ---------- */
+
+.controller.ps4 .dpad,
+.controller.ps4 .d-pad {
+    background: transparent !important;
+}
+
+.controller.ps4 .dpad button,
+.controller.ps4 .d-pad button,
+.controller.ps4 .dpad-button {
+
+    background: #151515 !important;
+    color: #eeeeee !important;
+
+    border-color: #050505 !important;
+
+    box-shadow:
+        inset 0 1px 2px rgba(255,255,255,.06),
+        0 2px 3px rgba(0,0,0,.35) !important;
+}
+
+.controller.ps4 .dpad button:active,
+.controller.ps4 .d-pad button:active {
+    background: #303030 !important;
+    transform: translateY(1px);
+}
+
+/* ---------- FACE BUTTONS ---------- */
+
+.controller.ps4 .button,
+.controller.ps4 .face-button,
+.controller.ps4 .facebuttons button {
+
+    background: #eeeeee !important;
+    color: #222222 !important;
+
+    border-color: #cfcfcf !important;
+
+    box-shadow:
+        inset 0 1px 2px rgba(255,255,255,.95),
+        0 2px 3px rgba(0,0,0,.18) !important;
+}
+
+/* Triangle */
+
+.controller.ps4 .triangle,
+.controller.ps4 .button-triangle {
+    color: var(--ps5-green) !important;
+}
+
+/* Circle */
+
+.controller.ps4 .circle,
+.controller.ps4 .button-circle {
+    color: var(--ps5-red) !important;
+}
+
+/* Cross */
+
+.controller.ps4 .cross,
+.controller.ps4 .button-cross,
+.controller.ps4 .x {
+    color: var(--ps5-blue) !important;
+}
+
+/* Square */
+
+.controller.ps4 .square,
+.controller.ps4 .button-square {
+    color: var(--ps5-pink) !important;
+}
+
+/* Face button press */
+
+.controller.ps4 .button:active,
+.controller.ps4 .face-button:active {
+    background: #d7d7d7 !important;
+    transform: translateY(1px);
+}
+
+/* ---------- ANALOG STICKS ---------- */
+
+.controller.ps4 .stick,
+.controller.ps4 .analog,
+.controller.ps4 .analog-stick,
+.controller.ps4 .joystick {
+
+    background: #181818 !important;
+
+    border-color: #070707 !important;
+
+    box-shadow:
+        inset 0 2px 3px rgba(255,255,255,.07),
+        inset 0 -4px 6px rgba(0,0,0,.65),
+        0 2px 4px rgba(0,0,0,.35) !important;
+}
+
+/* Stick cap */
+
+.controller.ps4 .stick::before,
+.controller.ps4 .analog::before,
+.controller.ps4 .analog-stick::before {
+
+    background: #242424 !important;
+}
+
+/* ---------- L1 / R1 ---------- */
+
+.controller.ps4 .bumper,
+.controller.ps4 .shoulder,
+.controller.ps4 .l1,
+.controller.ps4 .r1 {
+
+    background: #ededed !important;
+    color: #151515 !important;
+
+    border-color: #c9c9c9 !important;
+
+    box-shadow:
+        inset 0 1px 2px rgba(255,255,255,.9),
+        0 2px 3px rgba(0,0,0,.18) !important;
+}
+
+/* ---------- L2 / R2 ---------- */
+
+.controller.ps4 .trigger,
+.controller.ps4 .l2,
+.controller.ps4 .r2 {
+
+    background: #e5e5e5 !important;
+    color: #111 !important;
+
+    border-color: #c5c5c5 !important;
+
+    box-shadow:
+        inset 0 2px 3px rgba(255,255,255,.9),
+        inset 0 -2px 3px rgba(0,0,0,.08) !important;
+}
+
+.controller.ps4 .trigger:active,
+.controller.ps4 .l2:active,
+.controller.ps4 .r2:active {
+    background: #d2d2d2 !important;
+}
+
+/* ---------- OPTIONS / SHARE ---------- */
+
+.controller.ps4 .options,
+.controller.ps4 .share,
+.controller.ps4 .start,
+.controller.ps4 .select {
+
+    background: #171717 !important;
+    color: #d8d8d8 !important;
+
+    border-color: #050505 !important;
+
+    box-shadow:
+        inset 0 1px 2px rgba(255,255,255,.07),
+        0 2px 3px rgba(0,0,0,.4) !important;
+}
+
+/* ---------- PS BUTTON ---------- */
+
+.controller.ps4 .home,
+.controller.ps4 .ps,
+.controller.ps4 .guide {
+
+    background: #171717 !important;
+    color: white !important;
+
+    border-color: #050505 !important;
+
+    box-shadow:
+        inset 0 1px 2px rgba(255,255,255,.07),
+        0 2px 4px rgba(0,0,0,.45) !important;
+}
+
+/* ---------- LIGHT BAR ---------- */
+
+.controller.ps4 .lightbar,
+.controller.ps4 .light-bar,
+.controller.ps4 .led {
+
+    background: var(--ps5-blue) !important;
+
+    box-shadow:
+        0 0 5px rgba(37,137,232,.8),
+        0 0 14px rgba(37,137,232,.35) !important;
+}
+
+/* ---------- MUTE BUTTON ---------- */
+
+.controller.ps4 .mute,
+.controller.ps4 .mute-button {
+
+    background: #171717 !important;
+    color: #cccccc !important;
+
+    border-color: #050505 !important;
+}
+
+.controller.ps4 .mute.active,
+.controller.ps4 .mute-button.active {
+
+    background: #ff5722 !important;
+    color: #fff !important;
+
+    box-shadow:
+        0 0 6px rgba(255,87,34,.5) !important;
+}
+
+/* ---------- PS5-STYLE DARK INNER GRIP ---------- */
+
+.controller.ps4 .grip,
+.controller.ps4 .handle {
+
+    background: #eeeeee !important;
+}
+
+/* ---------- INPUT ANIMATION ---------- */
+
+.controller.ps4 button {
     transition:
-        background-color .08s ease,
+        background .08s ease,
         box-shadow .08s ease,
         transform .05s ease !important;
+}
+
+.controller.ps4 .pressed,
+.controller.ps4 .active {
+
+    filter: brightness(.82) !important;
+}
+
+/* ---------- REMOVE OLD PS4 RGB / COLOR EFFECTS ---------- */
+
+.controller.ps4,
+.controller.ps4 * {
+
+    animation-name: none !important;
+}
+
+/* Keep blue DualSense light */
+
+.controller.ps4 .lightbar,
+.controller.ps4 .light-bar,
+.controller.ps4 .led {
+    animation: ps5Light 2.5s ease-in-out infinite !important;
+}
+
+@keyframes ps5Light {
+    0%, 100% {
+        opacity: .80;
+    }
+
+    50% {
+        opacity: 1;
+    }
 }
