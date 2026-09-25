@@ -1,0 +1,241 @@
+/*
+.controller.<identifier> {
+    background: url(your image url here);
+    height: 123px;
+    width: 123px;
+    background-repeat: no-repeat;
+}
+
+.<identifier>.disconnected {
+    background: url(your image url here);
+}
+
+.<identifier>.disconnected div {
+    display: none;
+}
+
+.<identifier> .triggers {
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.<identifier> .trigger {
+    height: 123px;
+    width: 123px;
+    background-repeat: no-repeat;
+}
+
+.<identifier> .trigger.left {
+    height: 123px;
+    width: 123px;
+    background: url(your image url here);
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.<identifier> .trigger.right {
+    height: 123px;
+    width: 123px;
+    background: url(your image url here);
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.<identifier> .bumper {
+    opacity: 0;
+}
+
+.<identifier> .bumper.pressed {
+    opacity: 1;
+}
+
+.<identifier> .bumper.right {
+    height: 123px;
+    width: 123px;
+    background: url(your image url here);
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.<identifier> .bumper.left {
+    height: 123px;
+    width: 123px;
+    background: url(your image url here);
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.<identifier> .arrows {
+    position: absolute;
+    width: 123px;
+    height: 123px;
+    top: 250px;
+    left: 291px;
+    background-repeat: no-repeat;
+}
+
+.<identifier> .back {
+    opacity: 0;
+    position: absolute;
+}
+
+.<identifier> .start {
+    opacity: 0;
+    position: absolute;
+}
+
+.<identifier> .back.pressed {
+    height: 123px;
+    width: 123px;
+    left: -291px;
+    top: -250px;
+    background: url(your image url here);
+    position: absolute;
+    opacity: 1;
+}
+
+.<identifier> .start.pressed {
+    height: 123px;
+    width: 123px;
+    left: -291px;
+    top: -250px;
+    background: url(your image url here);
+    opacity: 1;
+}
+
+.<identifier> .abxy {
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.<identifier> .button {
+    position: absolute;
+}
+
+.<identifier> .button.pressed {
+    background-position-y: -00px;
+    margin-top: 0px;
+}
+
+.<identifier> .a.pressed {
+    background: url(your image url here);
+    height: 123px;
+    width: 123px;
+    background-repeat: no-repeat;
+}
+
+.<identifier> .b.pressed {
+    background: url(your image url here);
+    height: 123px;
+    width: 123px;
+    background-repeat: no-repeat;
+}
+
+.<identifier> .x.pressed {
+    background: url(your image url here);
+    height: 123px;
+    width: 123px;
+    background-repeat: no-repeat;
+}
+
+.<identifier> .y.pressed {
+    background: url(your image url here);
+    height: 123px;
+    width: 123px;
+    background-repeat: no-repeat;
+}
+
+.<identifier> .meta.pressed {
+    background: url(your image url here);
+    height: 123px;
+    width: 123px;
+    background-repeat: no-repeat;
+}
+
+.<identifier> .sticks {
+    left: 122px;
+    top: 256px;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+.<identifier> .stick. {
+    position: absolute;
+}
+
+.<identifier> .stick.pressed.left {
+    position: absolute;
+    background: url(your image url here);
+    height: 123px;
+    width: 123px;
+    background-repeat: no-repeat;
+}
+
+.<identifier> .stick.pressed.right {
+    position: absolute;
+    background: url(your image url here);
+    height: 123px;
+    width: 123px;
+    background-repeat: no-repeat;
+}
+
+.<identifier> .stick.left {
+    position: absolute;
+    background: url(your image url here);
+    height: 123px;
+    width: 123px;
+    background-repeat: no-repeat;
+}
+
+.<identifier> .stick.right {
+    position: absolute;
+    background: url(your image url here);
+        left: 382px;
+        top: 152px;
+    height: 123px;
+    width: 123px;
+    background-repeat: no-repeat;
+}
+
+.<identifier> .dpad {
+    height: 123px;
+    width: 123px;
+    background-repeat: no-repeat;
+}
+
+.<identifier> .face {
+    background: url(your image url here);
+    position: absolute;
+}
+
+.<identifier> .face.right.pressed {
+    background: url(your image url here);
+    height: 123px;
+    width: 123px;
+    background-repeat: no-repeat;
+}
+
+.<identifier> .face.left.pressed {
+    background: url(your image url here);
+    height: 123px;
+    width: 123px;
+    background-repeat: no-repeat;
+}
+
+.<identifier> .face.up.pressed {
+    background: url(your image url here);
+    height: 123px;
+    width: 123px;
+    background-repeat: no-repeat;
+}
+
+.<identifier> .face.down.pressed {
+    background: url(your image url here);
+    height: 123px;
+    width: 123px;
+    background-repeat: no-repeat;
+}
+
+*/
+
+        
